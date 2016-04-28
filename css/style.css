@@ -6,7 +6,7 @@ body{
   background: #849d8f;
 
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.2;
   color: #fff;
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
@@ -58,4 +58,22 @@ a{
 .main-menu{
   display: inline-block;
   vertical-align: middle;
+}
+.features-title{
+  margin: 0 2.3%;
+}
+.sidebar{
+  font-size: 0;
+}
+.sidebar form{
+  display: none;
+}
+.sidebar>div{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.sidebar>div:last-child{
+  margin-right: 0;
 }
