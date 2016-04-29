@@ -29,30 +29,25 @@ a{
 .col{
   display: inline-block;
   vertical-align: top;
-  margin-right: 2.2%;
+  padding: 0 1.11%;
   font-size: 16px;
 }
-.col:first-child{
-  margin-left: 2.3%;
-}
-.col:last-child{
-  margin-right: 2.3%;
-}
 .col-1{
-  width: 22.2%;
+  width: 25%;
 }
 .col-2{
-  width: 46.6%;
+  width: 50%;
 }
 .col-3{
-  width: 71%;
+  width: 75%;
 }
 .col-4{
-  width: 95.4%;
+  width: 100%;
 }
 .row{
   margin-bottom: 20px;
   font-size: 0;
+  padding: 0 1.167%;
 }
 .logo,
 .main-menu{
