@@ -25,6 +25,7 @@ a{
   min-width: 900px;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1.108%;
 }
 .col{
   display: inline-block;
@@ -45,17 +46,12 @@ a{
   width: 100%;
 }
 .row{
-  margin-bottom: 20px;
   font-size: 0;
-  padding: 0 1.167%;
 }
 .logo,
 .main-menu{
   display: inline-block;
   vertical-align: middle;
-}
-.features-title{
-  margin: 0 2.3%;
 }
 .sidebar{
   font-size: 0;
