@@ -289,13 +289,18 @@ a{
   border-radius: 10px;
   padding: 30px 20px;
   padding-bottom: 25px;
+  margin: 0 2.25%;
+  font-size: 0;
 }
-.features .row,
-.features .col{
-  padding: 0;
+.features-col{
+  display: inline-block;
+  vertical-align: top;
 }
-.features .col:first-child{
-  padding-right: 2.351%;
+.features-col:nth-child(2){
+  width: 51%;
+}
+.features-col:nth-child(3){
+  width: 49%;
 }
 .features-title{
   font-size: 24px;
@@ -310,6 +315,7 @@ a{
   padding-left: 55px;
   padding-top: 15px;
   background: url(../img/icon-feature-1.png) no-repeat;
+  font-size: 16px;
 }
 .feature:last-child{
   margin-bottom: 0;
