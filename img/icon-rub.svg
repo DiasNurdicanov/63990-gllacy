@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Avocode 2.6.0 - http://avocode.com -->
-<svg height="46" width="41" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 46">
+<svg height="36" width="41" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 36">
     <defs>
         <filter height="200%" width="200%" y="-50%" x="-50%" id="filter-1">
             <feOffset result="shadowOffset1" in="SourceAlpha" dy="0.9" dx="0.5" />

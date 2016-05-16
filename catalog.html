@@ -6,7 +6,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/style.min.css">
 	</head>
-	<body>
+	<body class="inner-page">
 
 		<div class="container">
 			<header class="page-header">
@@ -14,12 +14,14 @@
 					<div class="col col-3">
 
 						<figure class="logo">
-							<img src="img/logo.svg" alt="Glaccy" width="154" height="64">
+							<a href="/">
+								<img src="img/logo.svg" alt="Glaccy" width="154" height="64">
+							</a>
 						</figure>
 
 						<nav class="main-menu">
 							<ul>
-								<li class="item">
+								<li class="item  active">
 									<a href="#" class="link">Каталог</a>
 									<ul class="sub-menu">
 										<li class="title">Новинки</li>
@@ -40,9 +42,9 @@
 
 						<div class="breadcrumbs">
 							<ul>
-								<li><a href="">Главная</a></li>
-								<li><a href="">Каталог</a></li>
-								<li><a href="">Сливочное</a></li>
+								<li><a href=""><span>Главная</span></a></li>
+								<li><a href=""><span>Каталог</span></a></li>
+								<li><a href="" class="active"><span>Сливочное</span></a></li>
 							</ul>
 						</div>
 
@@ -143,6 +145,28 @@
 								</div>
 							</div>
 
+							<div class="filter filter-range">
+
+								<div class="filter-title">
+									<label class="min-price">Цена: <input name="min-price" type="text" value="100"> руб.</label>
+									<label class="max-price">- <input name="max-price" type="text" value="500">руб.</label>
+								</div>
+								
+								<div class="filter-content">
+
+									<div class="range-filter">
+										<div class="range-controls">
+											<div class="scale">
+												<div class="bar" style="margin-left: 10%; width: 60%"></div>
+											</div>
+											<div class="toggle toggle-min"></div>
+											<div class="toggle toggle-max"></div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
 							<div class="filter filter-fat">
 								<h2 class="filter-title">Жирность:</h2>
 								
@@ -197,6 +221,8 @@
 									</div>
 								</div>
 							</div>
+
+							<button class="filters-btn">Применить</button>
 						</div>
 					</div>
 				</form>
@@ -462,11 +488,11 @@
 
 			<div class="pagination">
 				<div class="row">
-					<div class="col-col-4">
+					<div class="col col-4">
 						<h2 class="pagination-title">Навигация по страницам</h2>
 						<ul>
 							<li><button disabled>Предыдущая страница</button></li>
-							<li><a href="">1</a></li>
+							<li class="active"><a href="">1</a></li>
 							<li><a href="">2</a></li>
 							<li><a href="">3</a></li>
 							<li><a href="">4</a></li>
