@@ -2,10 +2,10 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #fff;
+        fill: #333;
         fill-rule: evenodd;
       }
     </style>
   </defs>
-  <path id="Маркер" class="cls-1" d="M531.556,2221.99h7.8l-3.843,5.02h-0.124Z" transform="translate(-531.563 -2222)"/>
+  <path id="Маркер" class="cls-1" d="M531.556,2277.99h7.8l-3.843,5.02h-0.124Z" transform="translate(-531.563 -2278)"/>
 </svg>
