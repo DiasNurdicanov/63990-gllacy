@@ -550,20 +550,20 @@ body>input[type='radio']{
   border-radius: 100px;
   background: #f26843;
   background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
-  background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, .64);
   text-shadow: 0 2px 5px rgba(160, 32, 11, .76);
 }
 
 .slide-btn:hover{
   background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-  background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .slide-btn:active{
   background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
@@ -857,15 +857,15 @@ body>input[type='radio']{
   background-color: #f8f7f4;
   box-shadow: 0 20px 20px rgba(0, 0, 0, .4);
 }
-.search input[type='search']{
+.search input[type='text']{
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 24px;
 
   width: 100%;
   padding: 9px 15px;
 
-  color: #999;
+  color: #323232;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
   background-color: white;
@@ -903,14 +903,13 @@ body>input[type='radio']{
   display: block;
 
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 24px;
 
   width: 100%;
-  margin-bottom: 20px;
   padding: 9px 15px;
 
-  color: #999;
+  color: #323232;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
   background: #fff;
@@ -1140,12 +1139,12 @@ body>input[type='radio']{
   display: none;
 
   position: absolute;
-  top: -10px;
-  left: -10px;
+  top: -5px;
+  left: -5px;
 
-  width: -webkit-calc(100% + 20px);
+  width: -webkit-calc(100% + 10px);
 
-  width: calc(100% + 20px);
+  width: calc(100% + 10px);
   height: -webkit-calc(100% + 94px);
   height: calc(100% + 94px);
 
@@ -1180,6 +1179,7 @@ body>input[type='radio']{
 
   position: absolute;
   bottom: 21px;
+  padding-left: 3px;
 
   text-shadow: .5px .9px 3px rgba(49, 50, 53, .5);
 }
@@ -1194,6 +1194,9 @@ body>input[type='radio']{
 .product-price .unit{
   font-size: 30px;
   line-height: 30px;
+  -webkit-transform: translateX(-5px);
+      -ms-transform: translateX(-5px);
+          transform: translateX(-5px);
 }
 .product-price img{
   -webkit-transform: translate(2px, 1px);
@@ -1219,11 +1222,16 @@ body>input[type='radio']{
 .fast-view{
   display: none;
 
-  position: relative;
   position: absolute;
   z-index: 10;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -75px;
 
   width: 100%;
+  max-width: 200px;
   padding-top: 21px;
   padding-bottom: 17px;
 
@@ -1582,18 +1590,19 @@ body>input[type='radio']{
   display: block;
 
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 24px;
 
   width: 100%;
-  margin-bottom: 20px;
   padding: 9px 15px;
 
-  color: #999;
+
+  color: #323232;
   border: 1px solid rgba(178, 178, 178, .52);
   border-radius: 5px;
   background: #fff;
 }
+
 .feedback-form textarea{
   height: 155px;
 
@@ -1626,6 +1635,10 @@ body>input[type='radio']{
 }
 .show{
   display: block;
+}
+.show .feedback-form{
+  -webkit-animation: bounce 0.3s;
+          animation: bounce 0.3s;
 }
 .breadcrumbs ul{
   font-size: 0;
@@ -1899,7 +1912,8 @@ body>input[type='radio']{
 .pagination a:hover{
   background: rgba(255,255,255,.2);
 }
-.pagination .active a{
+.pagination .active a,
+.pagination a:active{
   color: #323232;
   background: #fff;
 }
@@ -2030,18 +2044,81 @@ body>input[type='radio']{
   outline: none;
   background: #f1f1f1;
 }
-.sidebar input{
+.sidebar input,
+.form input{
   height: 44px;
 }
-.sidebar input:hover{
+.sidebar input:hover,
+.form input:hover,
+.form textarea:hover{
   border: 2px solid rgba(154, 154, 154, 0.52);
   padding: 8px 14px;
 }
-.sidebar input:focus{
+.sidebar input:focus,
+.form input:focus,
+.form textarea:focus{
   padding: 8px 14px;
   border: 2px solid rgba(46, 136, 228, 0.52);
 }
-.sidebar input:focus::-webkit-placeholder{
+.sidebar p,
+.form p{
+  position: relative;
+  margin: 0;
+}
+.sidebar label,
+.form label{
   position: absolute;
-  top: -4px;
+  z-index: 1;
+  color: #999;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  left: 15px;
+  top: 9px;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+input[type="text"]:focus + label,
+textarea:focus + label{
+  color: #5b9ddf;
+  font-size: 11px;
+  line-height: 13px;
+  -webkit-transform: translateY(-25px);
+      -ms-transform: translateY(-25px);
+          transform: translateY(-25px);
+}
+input[type="text"]:valid + label,
+textarea:valid + label{
+  color: #999;
+  font-size: 11px;
+  line-height: 13px;
+  -webkit-transform: translateY(-25px);
+      -ms-transform: translateY(-25px);
+          transform: translateY(-25px);
+}
+.login-form p,
+.form p{
+  margin-bottom: 20px;
+}
+
+@-webkit-keyframes bounce {
+  0%   {
+    -webkit-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes bounce {
+  0%   {
+    -webkit-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
 }

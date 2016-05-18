@@ -51,15 +51,25 @@
 								<div class="search">
 									<a href="#">Поиск</a>
 									<form action="/echo" method="get">
-										<input type="search" placeholder="Что ищем?">
+										<p>
+											<input type="text" id="search-input" required>
+											<label for="search-input">Что ищем?</label>
+										</p>
 									</form>
 								</div>
 
 								<div class="login-form">
 									<a href="#">Вход</a>
 									<form action="/echo" method="post">
-										<input type="email" placeholder="Электронная почта">
-										<input type="password" placeholder="Пароль">
+										<p>
+											<input type="text" id="email" required>
+											<label for="email">Электронная почта</label>
+										</p>
+
+										<p>
+											<input type="text" id="password" required>
+											<label for="password">Пароль</label>
+										</p>
 
 										<button type="submit" class="btn btn-login">Войти</button>
 										
@@ -346,11 +356,22 @@
 					<div class="feedback-form">
 						<div class="title">Мы обязательно вам ответим!</div>
 						<form class="fields" action="/echo" method="post">
-							<button type="submit" class="close">Закрыть</button>
-							<input type="text" placeholder="Как вас зовут?">
-							<input type="email" placeholder="Ваша почта для ответа?">
+							<button type="button" class="close">Закрыть</button>
 
-							<textarea placeholder="Напишите что-нибудь..."></textarea>
+							<p>
+								<input type="text" id="form-name" required>
+								<label for="form-name">Как вас зовут?</label>
+							</p>
+
+							<p>
+								<input type="text" id="form-email" required>
+								<label for="form-email">Ваша почта для ответа?</label>
+							</p>
+
+							<p>
+								<textarea id="form-text" required></textarea>
+								<label for="form-text">Напишите что-нибудь...</label>
+							</p>
 
 							<div class="submit">
 								<button type="submit" class="btn">Отправить</button>
